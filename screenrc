@@ -4,6 +4,7 @@ vbellwait 0.25
 startup_message off
 shell "-/bin/bash"
 defscrollback 5000
+chdir
 
 caption always "%{-u wk}  %L=%-Lw%45>%{+ Gk} %n%f* %t %{-}%+Lw%-0< %=%{ck} %H | %M %d %c "
 
