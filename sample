@@ -1,0 +1,18 @@
+source ${HOME}/.screen/ruby19
+
+# why use stuff instead of exec?  Because if the process dies, the screen
+# session will die with it, leaving you unable to see the backtrace.  Also,
+# it's easier to restart that way.  But, your choice :)
+
+screen
+title "server"
+stuff "cd ~/Sites/sample\015script/server\015"
+
+screen
+title "console"
+stuff "cd ~/Sites/sample\015script/console\015"
+
+screen
+title "mongod"
+stuff "cd ~/Sites/sample\015mongod\015"
+

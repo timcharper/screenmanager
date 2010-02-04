@@ -1,0 +1,31 @@
+h1. Screen Manager Starter Kit
+
+h2. Overview
+
+This is a collection of configuration files to help you use screen to manage your project environments.
+
+A few things that you can do with it:
+
+* set environment variables (useful if you want to specify a version of Ruby to use for a project)
+* automatically fire up a database server or something
+
+See the source for examples
+
+h2. Setup
+
+<pre>
+cd ~
+git clone git://github.com/timcharper/screenmanager.git .screen
+ln -s ~/.screen/screenrc .screen
+echo ". ~/.screen/ss.bash" >> ~/.bash_profile
+</pre>
+
+Then, this being a starter kit, you'll need to modify the files to suit your needs.  See "sample" for an example of what's possible.
+
+h2. Invoking
+
+Depending on your setup, you commands will vary.  Once installed, type ss <env> to fire up or resume a screen session named one of ~/.screen/*.
+
+h2. Conclusion
+
+Have fun!
