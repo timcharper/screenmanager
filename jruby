@@ -1,9 +1,4 @@
 source ${HOME}/.screen/screenrc
-
-caption always "%{-u wk}  %L=%-Lw%45>%{+ Gk} %n%f* %t %{-}%+Lw%-0< %=%{rw} JRuby %{wk}"
-
-setenv OPT_PATH_FIRST false
-setenv PATH "/Users/timcharper/.rvm/rubies/jruby-1.4.0/bin"
-setenv GEM_PATH /Users/timcharper/.rvm/gems/jruby-1.4.0/
-setenv GEM_HOME /Users/timcharper/.rvm/gems/jruby-1.4.0/
+setenv RUBY "jruby-1.4.0"
+source ${HOME}/.screen/rvm
 

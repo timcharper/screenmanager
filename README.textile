@@ -13,19 +13,40 @@ See the source for examples
 
 h2. Setup
 
+h3. Install Screen
+
 <pre>
 cd ~
 git clone git://github.com/timcharper/screenmanager.git .screen
 ln -s ~/.screen/screenrc .screen
-echo ". ~/.screen/ss.bash" >> ~/.bash_profile
+echo ". ~/.screen/sm.bash" >> ~/.bash_profile
 </pre>
 
 Then, this being a starter kit, you'll need to modify the files to suit your needs.  See "sample" for an example of what's possible.
 
+h3. Give screen manager the ability to have the last say on the PATH variable
+
+<pre>
+# This line was installed for screen manager should go at the very end:
+[ -n "$SM_PATH" ] && export PATH=$SM_PATH:$PATH
+</pre>
+
+h3. Configure your rubies
+
+h4. If you're using RVM
+
+The examples assume you've installed rubies with rvm.
+
+If you look at ~/.screen/ruby19 as an example, it sets the environment variable $RUBY is simply the ruby version, verbatim as the folder is named in ~/.rvm/rubies.  Once set, it loads ~/.screen/rvm, which sets the environment variables necessary to activate that ruby.
+
+h4. Manual installations of ruby
+
+~/.screen/rvm will serve as an example for how to setup your environment.  You might try copying it to ~/.screen/your-ruby-name, and then modifying the paths to match your ruby paths respectively.
+
 h2. Invoking
 
-Depending on your setup, you commands will vary.  Once installed, type ss <env> to fire up or resume a screen session named one of ~/.screen/*.
+Depending on your setup, you commands will vary.  Once installed, type sm <env> to fire up or resume a screen session named one of ~/.screen/*.
 
 h2. Conclusion
 
-Have fun!
+Be nice, love your neighbor like yourself.

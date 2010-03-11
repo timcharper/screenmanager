@@ -1,4 +1,4 @@
-ss () {
+sm () {
   name=$1
   shift
   echo $name

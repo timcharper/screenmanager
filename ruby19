@@ -1,8 +1,3 @@
 source ${HOME}/.screen/screenrc
-
-caption always "%{-u wk}  %L=%-Lw%45>%{+ Gk} %n%f* %t %{-}%+Lw%-0< %=%{rw} Ruby19 %{wk}"
-
-setenv PATH "$HOME/.rvm/rubies/ruby-1.9.1-p378/bin:$HOME/.rvm/gems/ruby-1.9.1-p378/bin"
-setenv GEM_PATH $HOME/.rvm/gems/ruby-1.9.1-p378
-setenv GEM_HOME $HOME/.rvm/gems/ruby-1.9.1-p378
-
+setenv RUBY "ruby-1.9.1-p378"
+source ${HOME}/.screen/rvm

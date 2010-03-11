@@ -1,0 +1,6 @@
+setenv SM_PATH "$HOME/.rvm/rubies/$RUBY/bin:$HOME/.rvm/gems/$RUBY/bin"
+setenv GEM_PATH $HOME/.rvm/gems/$RUBY/
+setenv GEM_HOME $HOME/.rvm/gems/$RUBY/
+
+caption always "%{-u wk}  %L=%-Lw%45>%{+ Gk} %n%f* %t %{-}%+Lw%-0< %=%{rw} $RUBY "
+
