@@ -1,5 +1,5 @@
 # Remap escape char to C-\
-escape \034\034
+# escape \034\034
 vbellwait 0.25
 startup_message off
 shell "-/bin/bash"
